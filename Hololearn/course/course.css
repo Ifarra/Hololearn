@@ -1,0 +1,209 @@
+.scroll-1::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .scroll-1::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #ffffff;
+  }
+  
+  .container * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 40px;
+    width: 900px;
+    height: 500px;
+    scroll-snap-type: x mandatory;
+    scroll-padding-top: 24px;
+    border-radius: 8px;
+    gap: 30px;
+  }
+  
+  .container .card {
+    max-width: 400px;
+    flex: 0 0 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #141414;
+    scroll-snap-align: start;
+  }
+  
+  .card .card__image {
+    flex: 1;
+    height: 230px;
+  }
+  
+  .card:nth-child(1) .card__image {
+    background-image: url(/img/Math.webp);
+    /* background-size: cover; */
+    background-position: 10% 10%;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(
+        to right top,
+        #051937, 
+        #004d7a, 
+        #008793, 
+        #00bf72, 
+        #a8eb12
+    ); */
+  }
+  
+  .card:nth-child(2) .card__image {
+    background-image: url(/img/Science.webp);
+    /* background-size: cover; */
+    background-position: 10% 10%;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(
+      to right top, 
+      #dc09a5, 
+      #ce00b4, 
+      #ba00c5, 
+      #9c00d8, 
+      #6f12eb
+    ); */
+  }
+  
+  .card:nth-child(3) .card__image {
+    background-image: url('/img/M1\ Bio.jpg');
+    background-size: cover;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(
+      to right top, 
+      #dc1009, 
+      #e55f00, 
+      #e49200, 
+      #dac000, 
+      #c7eb12
+    ); */
+  }
+
+  .card:nth-child(4) .card__image {
+    background-image: url(/img/History2.jpeg);
+    background-size: cover;
+    background-position: 10% 10%;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(
+        to right top,
+        #051937, 
+        #004d7a, 
+        #008793, 
+        #00bf72, 
+        #a8eb12
+    ); */
+  }
+  
+  .card:nth-child(5) .card__image {
+    background-image: url(/img/Geo1.webp);
+    /* background-size: cover; */
+    background-position: 10% 10%;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(
+      to right top, 
+      #dc09a5, 
+      #ce00b4, 
+      #ba00c5, 
+      #9c00d8, 
+      #6f12eb
+    ); */
+  }
+  
+  .card:nth-child(6) .card__image {
+    background-image: url(/img/sem-physics.jpg);
+    background-size: cover;
+    background-position: 10% 10%;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(
+      to right top, 
+      #dc1009, 
+      #e55f00, 
+      #e49200, 
+      #dac000, 
+      #c7eb12
+    ); */
+  }
+  
+  .card .card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .card .card__content .card__title {
+    font-size: 32px;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  
+  .card .card__content .card__describe {
+    color: #fff;
+    font-size: 16px;
+  }
+
+.cardgeser{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    top: 20%;
+}
+
+.sec2textcourse{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    top: 13%;
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+.sec3textcourse{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    top: 50%;
+    font-size: 40px;
+    font-style: italic;
+    color: var(--text-color);
+    text-shadow: 0px 0px 7px var(--card-color);
+}
+
+.sec3imgcourse{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    top: 0;
+}
+
+.sec3imgcourse .sec3courseimg{
+    background-size: cover;
+    height: 429px;
+    width: 581px;
+    background: var(--mind);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 790px) {
+  .sec2textcourse{
+    display: none;
+  }
+  .card .card__content .card__describe {
+    font-size: 13px;
+  }
+}
