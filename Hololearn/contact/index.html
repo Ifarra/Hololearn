@@ -15,6 +15,25 @@
     />
 
     <title>Hololearn</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/site.webmanifest" />
   </head>
   <body>
     <nav>
@@ -50,9 +69,9 @@
       <div class="cntfrm">
         <div class="cardcontact">
           <span class="title">Leave a Comment</span>
-          <form class="form">
+          <form class="form" id="form">
             <div class="groupcontact">
-              <input placeholder="‎" type="text" required="" />
+              <input placeholder="‎" type="text" required="" id="name" />
               <label for="name">Name</label>
             </div>
             <div class="groupcontact">
@@ -93,5 +112,6 @@
       </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="./contact.js"></script>
   </body>
 </html>

@@ -80,6 +80,7 @@
   .form .groupcontact textarea {
     resize: none;
     height: 100px;
+    color: var(--text-color);
   }
   
   .form button {
